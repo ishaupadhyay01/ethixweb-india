@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Kumbh Sans', system-ui, -apple-system, sans-serif;
+    color: #0c0d10;
+    background-color: #fdfdfc;
+  }
+
+  /* Accessible focus indicators */
+  :focus-visible {
+    outline: 2px solid #c0272d;
+    outline-offset: 2px;
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom premium card borders and glow */
+.premium-card {
+  background: #ffffff;
+  border: 1px solid #e7ebf2;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.premium-card:hover {
+  border-color: rgba(192, 39, 45, 0.3);
+  box-shadow: 0 12px 30px -10px rgba(12, 13, 16, 0.08);
+}
+
+.dark-card {
+  background: #14171d;
+  border: 1px solid #232730;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dark-card:hover {
+  border-color: rgba(192, 39, 45, 0.45);
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.4);
+}

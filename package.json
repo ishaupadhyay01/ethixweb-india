@@ -1,0 +1,15 @@
+{
+  "name": "ethixweb-india",
+  "version": "1.0.0",
+  "description": "Ethixweb India — Full Stack Agency Website & Admin Portal",
+  "scripts": {
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "build:frontend": "npm run build --prefix frontend",
+    "seed": "npm run seed --prefix backend",
+    "start:backend": "npm start --prefix backend"
+  },
+  "keywords": ["ethixweb", "india", "react", "node", "mongodb", "tailwind"],
+  "author": "Ethixweb Development Team",
+  "license": "ISC"
+}
